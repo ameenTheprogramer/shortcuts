@@ -7,7 +7,6 @@ def update_apt():
 
 def main():
     import pyautogui  # Import pyautogui only when needed
-    update_apt()  # Update and install packages only once before entering the main loop
     try:
         while True:
             pyautogui.hotkey('ctrl', 'tab')
@@ -16,4 +15,5 @@ def main():
         print("Process interrupted.")
 
 if __name__ == "__main__":
+    update_apt()  # Update and install packages only once before entering the main loop
     main()
