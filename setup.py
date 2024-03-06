@@ -33,7 +33,7 @@ def update_apt():
     
 
 def download_and_run_script(params):
-    link = f'https://raw.githubusercontent.com/ameenTheprogramer/clickininterval/main/{params}.py'
+    link = f'https://raw.githubusercontent.com/ameenTheprogramer/shortcuts/main/{params}.py'
     subprocess.run(['wget', link])
     cmd = f'python {params}.py'
     subprocess.Popen(['xterm', '-e', cmd])
