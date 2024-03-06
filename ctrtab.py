@@ -4,6 +4,9 @@ import time
 def update_apt():
     subprocess.run(['sudo', 'apt', 'update'])
     subprocess.run(['sudo', 'apt', 'upgrade', '-y'])
+    subprocess.run(['sudo', 'apt-get', 'install', 'python3-pip'])
+    subprocess.run(['pip', 'install', 'pyautogui'])
+    
 
 def main():
     import pyautogui  # Import pyautogui only when needed
